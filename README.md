@@ -1,5 +1,3 @@
-Rewriting using mermaid.js :)
-
 ```mermaid
 flowchart TD
     Start[Start] --> WebTech{Is your team familiar\nwith web development?}
