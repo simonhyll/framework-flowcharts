@@ -13,7 +13,7 @@ flowchart TD
     WasmEx[Tauri doesn't support WASM directly]
     PreferFramework --> |Yes| PreferFrameworkSSR{Does the framework\nuse SSR?}
     PreferFramework --> |No| PFCodeCentric{Do you prefer a more\ncode centric approach?}
-    PFCodeCentric --> |Yes| PFTypescript{Do you want to develop using Typescript?}
+    PFCodeCentric --> |Yes| PFTypescript{Do you want to develop\n using Typescript?}
     PFCodeCentric --> |No| PFCodeCentricNo
     PFCodeCentricNo[Svelte, SvelteKit, Vue, Nuxt] --> BackendLanguage
     PFTypescript --> |Yes| PFTypescriptYes
@@ -47,7 +47,7 @@ flowchart TD
     GameDev --> |No| JobMarket{Is the job market a factor\nfor you?}
     GameDevWebTech --> |Yes| JobMarket
     GameDevWebTech --> |No| GameDevWebTechEx
-    GameDevWebTechEx[Tauri doesn't support giving you\na native graphical context]
+    GameDevWebTechEx[Tauri doesn't support giving you\na native graphical context\nYou should probably look\ninto Bevy for game\ndevelopment in Rust]
     JobMarket --> |Yes| JobMarketEx
     JobMarketEx[Tauri is still young and the likelihood of being hired\nnot just as a Tauri developer but a Rust\ndeveloper at all is still fairly slim.]
     JobMarket --> |No| PickTauri
